@@ -1,17 +1,15 @@
-import Image from "next/image";
+import { ArrowUpRight, BookOpen, Rocket } from "lucide-react";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <Image
+        <Rocket
           className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+          aria-hidden="true"
+          size={28}
+          strokeWidth={1.8}
         />
         <div className={styles.intro}>
           <h1>
@@ -45,13 +43,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
+            <ArrowUpRight aria-hidden="true" size={16} />
             Deploy Now
           </a>
           <a
@@ -60,6 +52,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
+            <BookOpen aria-hidden="true" size={16} />
             Documentation
           </a>
         </div>
