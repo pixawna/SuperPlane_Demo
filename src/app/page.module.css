@@ -76,6 +76,7 @@
   justify-content: center;
   align-items: center;
   height: 40px;
+  gap: 8px;
   padding: 0 16px;
   border-radius: 128px;
   border: 1px solid transparent;
@@ -85,10 +86,13 @@
   font-weight: 500;
 }
 
+.ctas svg {
+  flex-shrink: 0;
+}
+
 a.primary {
   background: var(--text-primary);
   color: var(--background);
-  gap: 8px;
 }
 
 a.secondary {
@@ -125,10 +129,6 @@ a.secondary {
 }
 
 @media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
-
   .page {
     --background: #000;
     --foreground: #000;
